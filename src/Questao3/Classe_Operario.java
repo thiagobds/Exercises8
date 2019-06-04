@@ -1,0 +1,34 @@
+package Questao3;
+
+    public class Classe_Operario extends Classe_Empregado {
+        
+        private double valorProducao;
+        private double comissao;
+        
+        public Classe_Operario(String nome, String endereco,String telefone, int codigoSetor,double salarioBase, double imposto,
+        double valorProducao, double comissao) {
+        super(nome, endereco, telefone,codigoSetor, salarioBase,imposto);
+        setValorProducao(valorProducao);
+        setComissao(comissao);
+        }
+        
+        public double getValorProducao() {
+        return valorProducao;
+        }
+        
+        public void setValorProducao(double valorProducao) {
+        this.valorProducao = valorProducao;
+        }
+        
+        public double getComissao() {
+        return comissao;
+        }
+        
+        public void setComissao(double comissao) {
+        this.comissao = comissao;
+        }
+        
+        public double calcularSalario() {
+        return super.calcularSalario() + (getValorProducao() * getComissao() / 100);
+    }
+}
