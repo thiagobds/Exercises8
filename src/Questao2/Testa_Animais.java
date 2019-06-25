@@ -5,7 +5,7 @@ import Questao1.Classe_Cachorro;
 import Questao1.Classe_Papagaio;
 import Questao1.Classe_Vaca;
 
-    public class Testa_Animais {
+    public abstract class Testa_Animais {
         
         public static void main(String[] args) {
             

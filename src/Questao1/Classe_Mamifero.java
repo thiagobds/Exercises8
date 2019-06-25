@@ -1,6 +1,6 @@
 package Questao1;
 
-    public class Classe_Mamifero extends Classe_Animal {
+    public abstract class Classe_Mamifero extends Classe_Animal {
         
         private int patas;
         

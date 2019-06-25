@@ -1,6 +1,6 @@
 package Questao1;
 
-    public class Classe_Animal {
+    public abstract class Classe_Animal {
         
         private String nome;
         
